@@ -1,0 +1,29 @@
+{
+    "name": "cordova-plugin-fabric-firebase",
+    "version": "0.0.1",
+    "description": "Cordova plugin to integrate Fabric.io along with Firebase Cordova plugin",
+    "cordova": {
+        "id": "cordova-plugin-fabric-firebase",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/okode/cordova-plugin-fabric-firebase"
+    },
+    "keywords": [
+        "cordova",
+        "fabric",
+        "crashlytics",
+        "answers",
+        "events",
+        "device",
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-ios"
+    ],
+    "author": "Okode",
+    "license": "MIT"
+}
