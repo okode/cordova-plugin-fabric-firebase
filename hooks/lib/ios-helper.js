@@ -27,6 +27,19 @@ module.exports = {
         var xcodeProject = xcode.project(xcodeProjectPath);
         xcodeProject.parseSync();
 
+        // Looks for Firebase Crashlytics script build phase and removes it if exists
+        var firebaseCrashlyticsBuildPhaseName = 'Crashlytics';
+        var scriptBuildPhases = xcodeProject.hash.project.objects.PBXShellScriptBuildPhase;
+        for (var id in scriptBuildPhases) {
+            var scriptBuildPhase = scriptBuildPhases[id];
+            if (scriptBuildPhase.name && scriptBuildPhase.name == firebaseCrashlyticsBuildPhaseName) {
+                // Removes firebase crashlytics build phase
+                // It if Fabric Crashlytics is going to be configured, it is needed to set Fabric secrets in script
+                delete scriptBuildPhases[id];
+                console.log('Removed Firebase Crashlytics script build phase');
+            }
+        }
+
         // Build the body of the script to be executed during the build phase.
         var script = '"' + '\\"${PODS_ROOT}/Fabric/run\\" ' + pluginConfig.apiKey + " " + pluginConfig.apiSecret + '"';
 
