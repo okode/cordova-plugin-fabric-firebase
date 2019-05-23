@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-fabric-firebase",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Cordova plugin to integrate Fabric.io along with Firebase Cordova plugin",
     "cordova": {
         "id": "cordova-plugin-fabric-firebase",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin id="cordova-plugin-fabric-firebase" version="0.0.1" xmlns="http://www.phonegap.com/ns/plugins/1.0">
+<plugin id="cordova-plugin-fabric-firebase" version="1.0.0" xmlns="http://www.phonegap.com/ns/plugins/1.0">
 
     <name>cordova-plugin-fabric-firebase</name>
     <description>Cordova plugin to integrate Fabric.io along with Firebase Cordova plugin</description>
